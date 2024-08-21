@@ -1,11 +1,11 @@
 
-<div class="container">
+<div class="container ">
     <div class="head">
-        <h2>Vehicl List</h2>
+        <h1>Vehicl List</h1>
     </div>
     <br>
-    <div class="vehicles">
-        <div class="vehicle" *ngFor="let item of items, let i = index">
+    <div class="row vehicles">
+        <div class=" col-md-4 vehicle" *ngFor="let item of items, let i = index">
             <h3>Vehicle {{i+1}}</h3>
             <p><b>Name :</b> {{item.name}}</p>
             <p><b>Capacity :</b>  {{item.manufacturer}}</p>

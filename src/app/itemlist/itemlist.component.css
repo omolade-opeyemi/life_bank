@@ -1,22 +1,21 @@
-.container{
-    padding: 5rem;
-}
+
 .head{
     text-align: center;
     margin: 2rem;
+    color: #fff;
 }
 .vehicles{
     display: flex;
     gap: 1rem;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
 .vehicle{
-    border: 2px solid;
+    border: 2px solid rgb(78, 71, 108);
     padding: 2rem;
-    width: 15rem;
+    width: 20rem;
     text-align: center;
+    background-color: #fff;
     
 }
 a{
