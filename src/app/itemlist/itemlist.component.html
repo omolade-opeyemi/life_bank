@@ -1,0 +1,39 @@
+
+<div class="container">
+    <div class="head">
+        <h2>Vehicl List</h2>
+    </div>
+    <br>
+    <div class="vehicles">
+        <div class="vehicle" *ngFor="let item of items, let i = index">
+            <h3>Vehicle {{i+1}}</h3>
+            <p><b>Name :</b> {{item.name}}</p>
+            <p><b>Capacity :</b>  {{item.manufacturer}}</p>
+            <p><b>Manufacturer:</b>  {{item.manufacturer}}</p>
+            <p><b>Crew :</b>  {{item.crew}}</p>
+            <p><b>Model :</b> {{item.model}}</p>
+            <p><b>Passenger :</b> {{item.passengers}}</p>
+            <p><b>Vehicle class :</b> {{item.vehicle_class}}</p>
+        </div>
+
+    </div>
+    <br>
+    <div>
+        <nav aria-label="...">
+            <ul class="pagination justify-content-center">
+              <li class="page-item">
+                <a class="page-link" (click)="previousePage()">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" (click)="previousePage()">{{currentPage}}</a></li>
+              <li class="page-item" aria-current="page">
+                <a class="page-link" (click)="pagination()">{{nextPage}}</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" (click)="pagination()">Next</a>
+              </li>
+            </ul>
+          </nav>
+    </div>
+    
+</div>
+<ngx-spinner type="ball-scale-multiple"></ngx-spinner>

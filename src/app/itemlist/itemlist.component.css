@@ -1,0 +1,24 @@
+.container{
+    padding: 5rem;
+}
+.head{
+    text-align: center;
+    margin: 2rem;
+}
+.vehicles{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.vehicle{
+    border: 2px solid;
+    padding: 2rem;
+    width: 15rem;
+    text-align: center;
+    
+}
+a{
+    cursor: pointer;
+}
